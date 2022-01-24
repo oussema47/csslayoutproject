@@ -1,0 +1,82 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family: 'Candal', sans-serif;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 2% 10%;
+}
+
+#introduction div {
+    display: flex;
+}
+
+#introduction h1 {
+    color: #00b39b;
+    font-size: 2.125rem;
+    margin: 2%;
+}
+
+#introduction div p {
+    font-weight: 400;
+    color: gray;
+    line-height: 1.5;
+    padding: 2%;
+}
+
+@media (max-width: 500px) {
+    #introduction div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #introduction div p {
+        width: 300px;
+    }
+}
+
+#countries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 10%;
+}
+
+.country {
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
+
+.country img {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+.country div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.country div {
+    padding: 4%;
+}
+
+.country div p {
+    color: gray;
+}
+
+.country div button {
+    color: white;
+    background-color: red;
+    padding: 2%;
+}
+
+.country:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
